@@ -9,7 +9,7 @@ datos[nchar((datos$NifCif))==0,][,1]<-NA
 datos <- datos[!is.na(datos$NifCif),]
 datos<- datos[!(datos$NifCif==0),]
 
-# PROCESAMIENTO NIFCIF ----------------------------------------------------
+# PROCESAMIENTO SOCIEDADES ANONIMAS ----------------------------------------------------
 library(dplyr)
 regexp <- "(^A)"
 g <- as.vector(grepl(pattern = regexp, x = datos$NifCif))
